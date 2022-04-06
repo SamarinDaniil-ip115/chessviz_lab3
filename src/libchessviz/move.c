@@ -9,7 +9,7 @@ void move(int *symbol, char chess[9][9])
     symbol_y = symbol[1];
     symbol_x_end = symbol[3];
     symbol_y_end = symbol[4];
-    figure = chess[symbol_x][symbol_y];
-    chess[symbol_x][symbol_y] = ' ';
-    chess[symbol_x_end][symbol_y_end] = figure; 
+    figure = chess[symbol_y][symbol_x];
+    chess[symbol_y][symbol_x] = ' ';
+    chess[symbol_y_end][symbol_x_end] = figure; 
 }

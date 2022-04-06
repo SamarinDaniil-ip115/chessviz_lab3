@@ -12,12 +12,11 @@ int check_move(int* symbol, char chess[9][9])
     symbol_y = symbol[1];
     symbol_x_end = symbol[3];
     symbol_y_end = symbol[4];
-    figure = chess[symbol_x][symbol_y];
+    figure = chess[symbol_y][symbol_x];
     // check pawn
     if (figure == 'p' || figure == 'P') {
         if (symbol_x == symbol_x_end) {
-            if (abs(symbol_y - symbol_y_end) <= 2
-                && abs(symbol_y - symbol_y_end) != 0) {
+            if (abs(symbol_y - symbol_y_end) <= 2 && abs(symbol_y - symbol_y_end) != 0) {
                 check = 0;
             } else {
                 check = 1;
