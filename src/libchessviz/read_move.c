@@ -19,6 +19,9 @@ int read_move(int *symbol, char *step)
             {
                 symbol[number_symbol] = position+1;
                 check = 0;
+                break;
+            } else {
+                check = 1;
             }
         }
     // check symbol 3
@@ -29,6 +32,9 @@ int read_move(int *symbol, char *step)
             {
                 symbol[number_symbol] = position+1;
                 check = 0;
+                break;
+            } else {
+                check = 1;
             }
         }
     // check symbol 1
@@ -39,6 +45,9 @@ int read_move(int *symbol, char *step)
             {
                 symbol[number_symbol] = position+1;
                 check = 0;
+                break;
+            } else {
+                check = 1;
             }
         }
     // check symbol 4  
@@ -49,6 +58,9 @@ int read_move(int *symbol, char *step)
             {
                 symbol[number_symbol] = position+1;
                 check = 0;
+                break;
+            } else {
+                check = 1;
             }
         } 
     return check;
