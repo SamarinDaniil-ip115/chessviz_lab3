@@ -1,7 +1,7 @@
 #include "read_move.h"
+
 #include <string.h>
 
-#define n 6
 #define k 8
 
 int read_move(int *symbol, char *step)
@@ -11,8 +11,6 @@ int read_move(int *symbol, char *step)
     int check = 1;
     int number_symbol = 0;
     //
-    if (strlen(step) == n)
-    {
     // check symbol 0
     number_symbol = 0;
         for(int position = 0; position < 8; position++)
@@ -52,7 +50,6 @@ int read_move(int *symbol, char *step)
                 symbol[number_symbol] = position+1;
                 check = 0;
             }
-        }
-    }  
+        } 
     return check;
 }
