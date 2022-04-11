@@ -1,3 +1,3 @@
 #pragma once
 
-int read_move(int *symbol, char *step);
+int read_move(int* symbol, char* step);
