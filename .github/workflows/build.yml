@@ -1,4 +1,4 @@
-me: Build
+name: Build
 
 on: push
 
@@ -14,3 +14,6 @@ jobs:
 
       - name: Build application
         run: make
+
+      - name: Test application
+	      run: make test
