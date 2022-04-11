@@ -16,5 +16,5 @@ jobs:
         run: make
 
       - name: Test application
-	      run: make test
+	    run: make test
         run: ./bin/chessviz-test
